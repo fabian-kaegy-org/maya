@@ -2,7 +2,11 @@
     "$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/theme.json",
     "version": 1,
     "settings": {
+        "appearanceTools": true,
         "color":{
+            "text": true,
+            "background": true,
+            "link": true,
             "palette": [
                 {
                     "name": "Oat",
@@ -56,6 +60,21 @@
                 }
             ]
         },
+        "layout": {
+            "contentSize": "min(90%, 657px)",
+            "wideSize": "min(95%, 916px)"
+        },
+        "spacing": {
+            "blockGap": true,
+            "margin": true,
+            "padding": true
+        },
+        "border": {
+            "radius": true,
+            "width": true,
+            "color": true,
+            "style": true
+        },
         "typography": {
             "fontWeight": true,
             "fontFamilies": [
@@ -74,20 +93,51 @@
         }
     },
     "styles": {
+        "spacing": {
+            "blockGap": "1rem"
+        },
         "typography": {
-            "fontFamily": "soleil, sans-serif"
+            "fontFamily": "var(--wp--preset--font-family--soleil)"
         },
         "elements": {
             "h2": {
                 "typography": {
                     "fontWeight": "800"
                 }
+            },
+            "link": {
+                "color": {
+                    "text": "var(--wp--preset--color--tulip)"
+                }
             }
         },
         "blocks": {
             "core/heading":{
                 "typography": {
-                    "fontFamily": "p22-mackinac-pro, serif"
+                    "fontFamily": "var(--wp--preset--font-family--p-22-mackinac-pro)"
+                }
+            },
+            "core/button":{
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--soleil)",
+                    "fontWeight": "800"
+                },
+                "spacing": {
+                    "padding": {
+                        "left": "25px",
+                        "right": "25px",
+                        "top": "5px",
+                        "bottom": "5px"
+                    }
+                },
+                "border":{
+                    "radius": "8px",
+                    "width": "3px"
+                }
+            },
+            "core/post-featured-image":{
+                "border": {
+                    "radius": "0 8px 8px 0"
                 }
             }
         }

@@ -6,3 +6,30 @@
  Version:      1.0.0
  Text Domain:  maya
 */
+
+* {
+    font-family: var(--wp--preset--font-family--soleil);
+}
+
+.has-inline-color {
+    font-family: inherit;
+}
+
+.wp-block-post-featured-image {
+    overflow: hidden;
+}
+
+.has-bottom-wave {
+    position: relative;
+}
+
+.has-bottom-wave::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    height: 30px;
+    background-color: red;
+}
+

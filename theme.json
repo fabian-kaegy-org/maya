@@ -1,4 +1,95 @@
 {
     "$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/theme.json",
-    "version": 1
+    "version": 1,
+    "settings": {
+        "color":{
+            "palette": [
+                {
+                    "name": "Oat",
+					"slug": "oat",
+					"color": "#FBF9F3"
+                },
+                {
+                    "name": "Midnight",
+					"slug": "midnight",
+					"color": "#1F3567"
+                },
+                {
+                    "name": "Bordeaux",
+					"slug": "bordeaux",
+					"color": "#5B2523"
+                },
+                {
+                    "name": "Sky",
+					"slug": "sky",
+					"color": "#738DB9"
+                },
+                {
+                    "name": "Dune",
+					"slug": "dune",
+					"color": "#DA8F43"
+                },
+                {
+                    "name": "Tulip",
+					"slug": "tulip",
+					"color": "#DD6232"
+                },
+                {
+                    "name": "Flamingo",
+					"slug": "flamingo",
+					"color": "#E6909B"
+                },
+                {
+                    "name": "Charcoal",
+					"slug": "charcoal",
+					"color": "#262626"
+                },
+                {
+                    "name": "Sage",
+					"slug": "sage",
+					"color": "#91BD9A"
+                },
+                {
+                    "name": "Pine",
+					"slug": "pine",
+					"color": "#203926"
+                }
+            ]
+        },
+        "typography": {
+            "fontWeight": true,
+            "fontFamilies": [
+                {
+                    "fontFamily": "soleil, sans-serif",
+					"slug": "soleil",
+					"name": "Soleil"
+                },
+                {
+                    "fontFamily": "p22-mackinac-pro, serif",
+					"slug": "p22-mackinac-pro",
+					"name": "P22 Mackinac Pro"
+                }
+            ]
+                
+        }
+    },
+    "styles": {
+        "typography": {
+            "fontFamily": "soleil, sans-serif"
+        },
+        "elements": {
+            "h2": {
+                "typography": {
+                    "fontWeight": "800"
+                }
+            }
+        },
+        "blocks": {
+            "core/heading":{
+                "typography": {
+                    "fontFamily": "p22-mackinac-pro, serif"
+                }
+            }
+        }
+    }
 }

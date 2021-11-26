@@ -16,11 +16,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: Install NPM Dependencies
-        run: npm install
+      # - name: Install NPM Dependencies
+      #   run: npm install
 
-      - name: Build Files
-        run: npm run build
+      # - name: Build Files
+      #   run: npm run build
 
       - name: ssh deploy
         uses: easingthemes/ssh-deploy@v2.1.6
